@@ -1,0 +1,13 @@
+{
+  "name": "crossverse-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "http-proxy": "^1.18.1"
+  }
+}

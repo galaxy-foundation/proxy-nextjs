@@ -1,2 +1,3 @@
-# proxy-nextjs
-proxy for nextjs hosting
+# developed by ivanov
+# 2021/11/05
+# proxy for crossverse
