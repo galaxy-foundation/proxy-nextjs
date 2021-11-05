@@ -9,13 +9,16 @@ const cert = fs.readFileSync(__dirname+'/certs/server.crt', 'utf8')
 const caBundle = fs.readFileSync(__dirname+'/certs/server.ca-bundle', 'utf8')
 const ca = caBundle.split('-----END CERTIFICATE-----\n') .map((cert) => cert +'-----END CERTIFICATE-----\n')
 /* ca.pop() */
+
+console.log("HTTP_PORT", HTTP_PORT)
 httpProxy.createServer({
     target: {
       host: 'localhost',
       port: 3000
     }
 }).listen(HTTP_PORT);
-  
+
+console.log("HTTPS_PORT", HTTPS_PORT)
 httpProxy.createServer({
     target: {
       host: 'localhost',
